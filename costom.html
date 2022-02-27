@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom propertise</title>
+    <style>
+        :root {
+            --sid-width: 200px;
+            --dark-border: 2px solid black;
+            --main-color: orange;
+            --border-color: blue;
+            --backgroud-color: red;
+        }
+
+        h1 {
+            color: var(--main-color);
+        }
+
+        p {
+            color: aqua;
+        }
+
+        h2 {
+            color: aqua;
+            border: 2px solid var(--border-color);
+        }
+
+        h6 {
+            background-color: var(--backgroud-color);
+        }
+
+        footer {
+            border: var(--dark-border);
+            color: aqua;
+            clear: both;
+        }
+
+        .my-nav,
+        .blog-container {
+            float: left;
+            height: 500px;
+        }
+
+        .my-nav {
+            background-color: salmon;
+            width: var(--sid-width);
+        }
+
+        .blog-container {
+            background-color: blue;
+            width: calc(100% - 3*var(--sid-width));
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Custom Exploring propertise</h1>
+        <p>Welcome to my website</p>
+    </header>
+    <main>
+        <h2>My name: mahmudul Hasan Tuhin</h2>
+        <h6>my tinypng emage</h6>
+        <section>
+            <aside class="my-nav">
+                my site navigation
+            </aside>
+            <div class="blog-container">
+                <h4>Mahmudul hasan tuhin</h4>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><small>wellcome to my footer</small></p>
+    </footer>
+</body>
+
+</html>
